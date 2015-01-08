@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle filter-lines'
+      'command': 'filter-lines:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'filter-lines'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'filter-lines:toggle'
+        }
+      ]
+    ]
+  }
+]
